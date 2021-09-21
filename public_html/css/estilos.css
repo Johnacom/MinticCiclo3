@@ -81,3 +81,14 @@
 
 .navbar_inf { border: 1px solid #C00;
   grid-area: navbar_inf; }
+
+.button {
+  background-color: #e7e7e7;/* Gray */ 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
