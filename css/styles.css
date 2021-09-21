@@ -1,0 +1,83 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "section section vertical_navbar"
+    "section section vertical_navbar"
+    "section section vertical_navbar"
+    "footer footer vertical_navbar";
+}
+
+.header { border: 1px solid #C00;
+  grid-area: header; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "resumen contacto redes";
+    border: 1px solid #C00;
+  grid-area: footer;
+}
+
+.resumen { border: 1px solid #C00;
+  grid-area: resumen; }
+
+.contacto { border: 1px solid #C00;
+  grid-area: contacto; }
+
+.redes { border: 1px solid #C00;
+  grid-area: redes; }
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "inicio"
+    "servicios"
+    "proyectos";
+  grid-area: section;
+}
+
+.inicio { border: 1px solid #C00;
+  grid-area: inicio; }
+
+.servicios { border: 1px solid #C00;
+  grid-area: servicios; }
+
+.proyectos { border: 1px solid #C00;
+  grid-area: proyectos; }
+
+.vertical_navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar_sup"
+    "navbar_med"
+    "navbar_inf";
+  grid-area: vertical_navbar;
+}
+
+.navbar_sup { 
+  border: 1px solid #C00;
+  grid-area: navbar_sup; }
+
+.navbar_med { 
+  border: 1px solid #C00;
+  grid-area: navbar_med; }
+
+.navbar_inf { border: 1px solid #C00;
+  grid-area: navbar_inf; }
